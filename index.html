@@ -1,19 +1,87 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
+
+		 <!-- Metadata for the HTML document -->
+
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>Rubric Beauty</title>
 		<meta name="keywords" content="">
 		<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 		<meta name="description" content="">
+
+		<!-- Link to external CSS files -->
+
 		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
 		<link href="default.css" rel="stylesheet" type="text/css" media="all">
 		<link href="fonts.css" rel="stylesheet" type="text/css" media="all"><!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+		<style>
+			#wrapper2 #newsletter.content form {
+				/* Center the form */
+				margin: 0 auto;
+				max-width: 500px;
+				padding: 20px;
+				background-color: #f5f5f5;
+				border-radius: 5px;
+			}
+	
+			#wrapper2 #newsletter.content form.row {
+				/* Stack form rows vertically */
+				display: flex;
+				flex-direction: column;
+				margin-bottom: 10px;
+			}
+	
+			#wrapper2 #newsletter.content form.row.half {
+				/* Stack half-width form rows horizontally */
+				display: flex;
+				flex-direction: row;
+			}
+	
+			#wrapper2 #newsletter.content form.row.half.text {
+				/* Half-width input fields */
+				flex: 1;
+				margin-right: 10px;
+			}
+	
+			#wrapper2 #newsletter.content form.row.half.submit {
+				/* Half-width submit button */
+				flex: 1;
+			}
+	
+			#wrapper2 #newsletter.content form.row.text {
+				/* Input fields */
+				padding: 10px;
+				border: 1px solid #ccc;
+				border-radius: 3px;
+				width: 100%;
+			}
+	
+			#wrapper2 #newsletter.content form.row.submit {
+				/* Submit button */
+				padding: 10px 20px;
+				background-color: #007bff;
+				color: #fff;
+				border: none;
+				border-radius: 3px;
+				cursor: pointer;
+			}
+	
+		</style>
+
 	</head>
+
 	<body>
+
+		<!-- Header section -->
+
 <div id="header-wrapper">
 	<div id="header" class="container">
 		<div id="menu">
+
+			  <!-- Navigation menu -->
+
 			<ul><li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
 				<li><a href="#" accesskey="2" title="">About Us</a></li>
 				<li><a href="#" accesskey="3" title="">Our Services</a></li>
@@ -22,11 +90,17 @@
 				<a href="#" class="button">Sign up</a>
 			</ul></div>
 		<div id="logo">
+
+			 <!-- Website logo and title -->
+
 			<h1><a href="#">Rubric Beauty</a></h1>
 			<span>Beauty a call away</span> 
 		</div>
 	</div>
 </div>
+
+<!-- Welcome section -->
+
 <div id="wrapper1">
 	<div id="welcome" class="container">
 		<div class="title">
@@ -38,11 +112,17 @@
 			<a href="#" class="button">Signup</a> </div>
 	</div>
 </div>
+
+<!-- Services section -->
+
 <div id="wrapper3">
 	<div id="portfolio" class="container">
 		<div class="title">
 			<h2>Our Services</h2>
 			<span class="byline">From haircuts and hairstyling to manicures and makeup, find the perfect service to suit your needs.</span> </div>
+
+			<!-- Service columns -->
+
 		<div class="column1">
 			<div class="box"> <a href="#"><img src="https://images.pexels.com/photos/1836983/pexels-photo-1836983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" class="image image-full" width="282" height="300"></a>
 				<h3>OUR HAIRCUTS</h3>
@@ -67,44 +147,70 @@
 				<p>Our hairstylist are trained to style all hair types and textures.</p>
 				<a href="#" class="button button-small">BOOK FOF HAIRSTYLING</a> </div>
 		</div>
+
+		  <!-- More service columns... -->
+
 	</div>
 </div>
-<div id="wrapper2">
-	<div id="newsletter" class="container">
-		<div class="title">
-			<h2>Newsletter Signup</h2>
-			<span class="byline">Integer sit amet pede vel arcu aliquet pretium</span> </div>
-		<div class="content">
-			<form method="post" action="#">
-				<div class="row half">
-					<div class="6u">
-						<input type="text" class="text" name="name" placeholder="Name"></div>
-					<div class="6u">
-						<input type="text" class="text" name="email" placeholder="Email"></div>
-				</div>
-				<div class="row half">
-					<div class="12u">
-						<textarea name="message" placeholder="Message"></textarea></div>
-				</div>
-				<div class="row">
-					<div class="12u"> <a href="#" class="button submit">Send Message</a> </div>
+
+ <!-- Newsletter section -->
+
+ <div id="wrapper2">
+    <div id="newsletter" class="container">
+        <div class="title">
+            <h2>Newsletter Signup</h2>
+            <span class="byline">Give Us Your Deatils So We Can Get In Touch With You! </span> </div>
+        <div class="content">
+
+             <!-- Newsletter form -->
+
+            <form method="post" action="#">
+                <div class="row half">
+                    <div class="6u">
+                        <input type="text" class="text" name="name" placeholder=" Full Name"></div>
+                    <div class="6u">
+                        <input type="text" class="text" name="email" placeholder="Email Address"></div>
+                </div>
+                <div class="row half">
+                    <div class="12u">
+                        <textarea name="message" placeholder="Leave Us a Message"></textarea></div>
+                </div>
+                <div class="row">
+                    <div class="12u"> <a href="#" class="button submit">Send Message</a> </div>
+
 				</div>
 			</form>
 		</div>
 	</div>
 </div>
+
+  <!-- Footer section -->
+
 <div id="wrapper4">
 	<div id="footer" class="container">
 		<div>
 			<header class="title"><h2>Get in touch</h2>
-				<span class="byline">Phasellus nec erat sit amet nibh pellentesque congue</span> </header><ul class="contact"><li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+
+				<span class="byline">You Can Connect With Us Through The Social Media Links Below</span> </header>
+				
+				<!-- Website copyright -->
+				
+				<ul class="contact"><li><a href="#" class="icon icon-twitter"><span>Twitter</span></a></li>
+
 				<li><a href="#" class="icon icon-facebook"><span></span></a></li>
-				<li><a href="#" class="icon icon-dribbble"><span>Pinterest</span></a></li>
+
+				<li><a href="#" class="icon icon-pinterest"><span>Pinterest</span></a></li>
+
 				<li><a href="#" class="icon icon-tumblr"><span>Google+</span></a></li>
+
 				<li><a href="#" class="icon icon-rss"><span>Pinterest</span></a></li>
-			</ul></div>
+			</ul>
+		</div>
 	</div>
 </div>
+
+<!-- Website copyright -->
+
 <div id="copyright">
 	Powered by: <a href="https://templated.co/">TEMPLATED</a>
 </div>
